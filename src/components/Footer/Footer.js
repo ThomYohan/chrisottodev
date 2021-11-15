@@ -13,7 +13,7 @@ const Footer = (props) => {
         <Social theme={theme} />
         <ul>
           <li>
-            © {year} Chris Otto | Hosted on{' '}
+            © {year} Thomas Yohannes | Hosted on{' '}
             <a
               href="https://www.netlify.com"
               target="_blank"
@@ -22,7 +22,7 @@ const Footer = (props) => {
             >
               Netlify
             </a>{' '}
-            | Build with{' '}
+            | Built with{' '}
             <a
               href="https://www.gatsbyjs.org"
               target="_blank"

@@ -1,42 +1,161 @@
 [
   {
-    "name": "VSCode FitNesse",
-    "description": "Formats, runs tests and provides syntax highlighting for FitNesse tests in VS Code.",
-    "img": "vscodefitnesse.png",
-    "tech": ["Typescript", "Node"],
-    "githuburl": "https://github.com/chrisotto6/VSCodeFitNesse",
-    "projecturl": "https://marketplace.visualstudio.com/items?itemName=chrisotto.vscodefitnesse"
+    "name": "Coven App",
+    "description": "Collaborated and contributed in ground-level development of an app from start to app store submission",
+    "img": "Coven.png",
+    "tech": ["React Native", "React Native Paper", "Javascript", "Typescript", "XCode"]
   },
   {
-    "name": "Personal Website",
-    "description": "Personal site showcasing my blog, projects and online resume.",
-    "img": "chrisottodev.png",
-    "tech": ["Gatsby", "React", "GraphQL", "Node"],
-    "githuburl": "https://github.com/chrisotto6/chrisottodev",
-    "projecturl": "https://chrisotto.dev/"
+    "name": "Speakfully | SpeakfullyOne/Now/Pro/Pro+",
+    "description": "Four mobile-responsive pages utlizing a CMS to display route based content. Reusing previously created reusable components(Pricing Page) to display pricing details and a CRM integration. Pricing card styling is conditionally rendered based on a passed in CMS boolean value.",
+    "img": "SpeakfullyPro.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS",
+      "HubspotCRM"
+    ],
+    "projecturl": "https://speakfully.com/products/speakfullypro+"
   },
   {
-    "name": "Library",
-    "description": "React application to view parts of my GoodReads Library.",
-    "img": "library.png",
-    "tech": ["React", "API", "Node"],
-    "githuburl": "https://github.com/chrisotto6/library",
-    "projecturl": "https://library.chrisotto.dev/"
+    "name": "Speakfully | Home + Navbar",
+    "description": "Reworked, and gave a face lift to the global navigation. Created a mobile-responsive page utilizing a CMS to display everything, including the carousel contents. Utilized even/odd children to switch content order.",
+    "img": "SpeakfullyHome.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS"
+    ],
+    "projecturl": "https://speakfully.com/products/speakfullypro+"
   },
   {
-    "name": "FitNesse Format",
-    "description": "NPM package to format a string the same as the FitNesse client would.",
-    "img": "fitnesseformat.png",
-    "tech": ["Javascript", "Node"],
-    "githuburl": "https://github.com/chrisotto6/fitnesse-format",
-    "projecturl": "https://www.npmjs.com/package/fitnesse-format"
+    "name": "Speakfully | Pricing",
+    "description": "Reusable pricing cards that conditionally render popularity based on a passed in CMS boolean. A conditionally rendered comparison chart, and a CRM integration. All displayed on a mobile-responsive page utilizing a CMS to display everything.",
+    "img": "SpeakfullyPricing.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS",
+      "HubspotCRM",
+      "VueJS Toggle Button"
+    ],
+    "projecturl": "https://speakfully.com/products/pricing"
   },
   {
-    "name": "Card Shuffling",
-    "description": "A simple web application to deal cards to players.",
-    "img": "cardshuffling.png",
-    "tech": ["Javascript", "Node"],
-    "githuburl": "https://github.com/chrisotto6/card-shuffling",
-    "projecturl": "https://card-shuffling.chrisotto.dev/"
+    "name": "SpeakfullyNow",
+    "description": "Built Frontend for a web app that allows you to document, submit, and track workplace experiences",
+    "img": "SpeakfullyNow.png",
+    "tech": ["VueJS", "Javascript", "Typescript", "HTML", "CSS", "Sass"],
+    "projecturl": "https://speakfully.com/partners"
+  },
+  {
+    "name": "Speakfully | Partners",
+    "description": "Mobile-responsive page utilizing a CMS to provide interactive partner-based content, alongside a couple CRM integrations",
+    "img": "SpeakfullyPartners.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS",
+      "HubspotCRM"
+    ],
+    "projecturl": "https://speakfully.com/partners"
+  },
+  {
+    "name": "Speakfully | Blog",
+    "description": "Multiple blog pages utilizing reusable components to display CMS content, keeping users up-to-date with press-releases, interviews, and insider info",
+    "img": "SpeakfullyBlog.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS"
+    ],
+    "projecturl": "https://speakfully.com/blog"
+  },
+  {
+    "name": "Speakfully | Meet the Team",
+    "description": "Mobile-responsive, static page utilizing a CMS to introduce users to the Speakfully team, their descriptions, and social media links",
+    "img": "SpeakfullyAbout.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS"
+    ],
+    "projecturl": "https://speakfully.com/about"
+  },
+  {
+    "name": "Speakfully | Why Speakfully",
+    "description": "Mobile-responsive, static page providing info through a CMS detailing why Speakfully is a good choice",
+    "img": "SpeakfullyWhySpeakfully.png",
+    "tech": [
+      "VueJS",
+      "NodeJS",
+      "Nuxt",
+      "Javascript",
+      "Bootstrap",
+      "HTML",
+      "CSS",
+      "Sass",
+      "ButterCMS"
+    ],
+    "projecturl": "https://speakfully.com/whyspeakfully"
+  },
+  {
+    "name": "Shiftradr",
+    "description": "Full CRUD web applicatoin that allows employees to utilize real-time messaging, the ability to post and trade liability of work shifts in a streamlined fashion using a timeline.",
+    "img": "ST1.png",
+    "tech": [
+      "ReactJS",
+      "React Hooks",
+      "NodeJS",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "Nodemailer",
+      "Sockets"
+    ],
+    "githuburl": "https://github.com/shiftradr"
+  },
+  {
+    "name": "Form Factor",
+    "description": "A React web app that utilizes Redux to track your achievements relating to macronutrients, micronutrients, and workout details to provide a chart showing both in tandem with each other over the span of a week.",
+    "img": "FF1.png",
+    "tech": ["ReactJS", "Redux", "NodeJS", "Javascript", "HTML", "CSS", "ChartJS"],
+    "githuburl": "https://github.com/ThomYohan/Fitness-Project"
   }
 ]

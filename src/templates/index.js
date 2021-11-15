@@ -3,8 +3,16 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { ThemeContext } from '../layouts'
 import Blog from '../components/Blog'
+import SubHeadline from '../components/Article/SubHeadline'
+import Work from '../components/Work'
+import Skill from '../components/Skill'
 import Hero from '../components/Hero'
 import Seo from '../components/Seo'
+import Article from '../components/Article'
+import Education from '../components/Work/Education'
+import Headline from '../components/Article/Headline'
+import Volunteer from '../components/Work/Volunteer'
+import About from '../pages/about.js'
 
 class IndexPage extends React.Component {
   separator = React.createRef()
@@ -14,15 +22,8 @@ class IndexPage extends React.Component {
   }
 
   render() {
-    const { currentPage, numPages } = this.props.pageContext
-    const isFirst = currentPage === 1 || !currentPage
-    const isLast = currentPage === numPages
-    const prevPage = currentPage - 1 === 1 ? '/' : '/' + (currentPage - 1).toString()
-    const nextPage = '/' + (currentPage + 1).toString()
-
     const {
       data: {
-        posts: { edges: posts = [] },
         bgDesktop: {
           resize: { src: desktop },
         },
@@ -43,83 +44,18 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        {isFirst ? (
-          <React.Fragment>
-            <ThemeContext.Consumer>
-              {(theme) => (
-                <Hero
-                  scrollToContent={this.scrollToContent}
-                  backgrounds={backgrounds}
-                  theme={theme}
-                />
-              )}
-            </ThemeContext.Consumer>
-
-            <hr ref={this.separator} />
-          </React.Fragment>
-        ) : null}
-
-        <ThemeContext.Consumer>
-          {(theme) => <Blog posts={posts} theme={theme} />}
-        </ThemeContext.Consumer>
-
-        <div
-          style={{
-            maxWidth: '700px',
-            margin: '0 auto 20px auto',
-            textAlign: 'center',
-          }}
-        >
-          {!isFirst && (
-            <Link to={prevPage} rel="prev">
-              ← Previous Page&nbsp;
-            </Link>
-          )}
-
-          {!isLast && (
-            <Link to={nextPage} rel="next">
-              &nbsp;Next Page →
-            </Link>
-          )}
-        </div>
-
-        <ul
-          id="post-page-list"
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            maxWidth: '700px',
-            margin: '0 auto 60px auto',
-            alignItems: 'center',
-            listStyle: 'none',
-            padding: 0,
-            lineHeight: '30px',
-            justifyContent: 'center',
-          }}
-        >
-          {Array.from({ length: numPages }, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-                fontSize: '25px',
-              }}
-            >
-              <Link
-                to={`/${i === 0 ? '' : i + 1}`}
-                style={{
-                  padding: '3px 8px',
-                  borderRadius: '7px',
-                  textDecoration: 'none',
-                  color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#787878' : '',
-                }}
-              >
-                {i + 1}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <React.Fragment>
+          <ThemeContext.Consumer>
+            {(theme) => (
+              <Hero
+                scrollToContent={this.scrollToContent}
+                backgrounds={backgrounds}
+                theme={theme}
+              />
+            )}
+          </ThemeContext.Consumer>
+          <hr ref={this.separator} />
+        </React.Fragment>
 
         <Seo />
 

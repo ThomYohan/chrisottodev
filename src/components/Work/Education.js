@@ -12,7 +12,7 @@ const Education = (props) => {
           <div className="degree">{degree}</div>
         </div>
         <div className="studentInfo">
-          <div>GPA: {gpa}</div>
+          {/* <div>GPA: {gpa}</div> */}
           {honors && <div>{honors}</div>}
         </div>
       </div>

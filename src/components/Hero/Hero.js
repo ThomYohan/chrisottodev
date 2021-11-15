@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import { FaArrowDown } from 'react-icons/fa/'
+import { Link } from 'gatsby'
+import { FaUser } from 'react-icons/fa/'
 
 const Hero = (props) => {
   const { scrollToContent, backgrounds, theme } = props
@@ -9,14 +9,17 @@ const Hero = (props) => {
   return (
     <React.Fragment>
       <section className="hero">
-        <h1>Hi! I&rsquo;m Chris.</h1>
+        <h1>Hi! I&rsquo;m Thomas.</h1>
         <p>
-          I&rsquo;m a software engineer based in Milwaukee, WI.
-          <br />I enjoy Javascript, DevOps and Testing.
+          I&rsquo;m a software engineer based in Wichita, KS.
+          <br />I enjoy VueJS, Javascript, HTML & CSS.
         </p>
-        <button onClick={scrollToContent} aria-label="scroll">
-          <FaArrowDown />
-        </button>
+        <Link to="/about/" className="linkContainer">
+          <button>
+            <FaUser className="linkIcon" />
+            {/* <p className="links">Take a look</p> */}
+          </button>
+        </Link>
       </section>
 
       {/* --- STYLES --- */}
@@ -34,6 +37,29 @@ const Hero = (props) => {
           height: 100px;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
+        }
+
+        .linkContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+        }
+        .linkIcon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+        }
+        .links {
+          color: #FFFFF;
+          font-size: 20px;
         }
 
         h1 {
