@@ -6,7 +6,7 @@
     "tech": ["React Native", "React Native Paper", "Javascript", "Typescript", "XCode"]
   },
   {
-    "name": "Speakfully | SpeakfullyOne/Now/Pro/Pro+",
+    "name": "Speakfully | One/Now/Pro/Pro+",
     "description": "Four mobile-responsive pages utlizing a CMS to display route based content. Reusing previously created reusable components(Pricing Page) to display pricing details and a CRM integration. Pricing card styling is conditionally rendered based on a passed in CMS boolean value.",
     "img": "SpeakfullyPro.png",
     "tech": [
